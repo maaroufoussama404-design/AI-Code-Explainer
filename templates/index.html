@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+AI Code Explainer
+</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>
+🤖 AI Code Explainer
+</h1>
+
+
+<form method="POST">
+
+
+    <label>Programming Language</label>
+
+<select name="language">
+
+    <option>Python</option>
+
+    <option>JavaScript</option>
+
+    <option>Java</option>
+
+    <option>C++</option>
+
+</select>
+
+<br><br>
+
+
+<textarea
+name="code"
+placeholder="Paste your code here..."
+></textarea>
+
+
+<button>
+Analyze Code
+</button>
+
+
+</form>
+
+
+{% if result %}
+
+<div class="result">
+
+<pre>
+{{ result }}
+</pre>
+
+</div>
+
+{% endif %}
+
+
+</div>
+
+
+</body>
+
+</html>
